@@ -1,0 +1,9 @@
+# npm
+node_modules
+
+# secrets
+env.json
+
+# artifacts
+artifacts
+cache

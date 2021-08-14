@@ -1,0 +1,48 @@
+{
+  "name": "smart-contracts-boilerplate",
+  "version": "1.0.0",
+  "description": "A starting boilerplate for developing smart contracts with Solidity and Hardhat for Ethereum.",
+  "scripts": {
+    "compile": "npx hardhat compile",
+    "test": "npx hardhat test",
+    "node": "npx hardhat node",
+    "clean": "rm -r artifacts cache ts-types",
+    "deploy:local": "npx hardhat run scripts/deploy.js",
+    "deploy:ropsten": "npx hardhat run scripts/deploy.js --network ropsten",
+    "deploy:mainnet": "npx hardhat run scripts/deploy.js --network mainnet"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jorgeacortes/smart-contracts-boilerplate.git"
+  },
+  "keywords": [
+    "ethereum",
+    "smart contracts",
+    "evm",
+    "solidity",
+    "hardhat",
+    "openzeppelin",
+    "blockchain"
+  ],
+  "author": "cortesja.com",
+  "license": "MIT",
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.2",
+    "@nomiclabs/hardhat-etherscan": "^2.1.4",
+    "@nomiclabs/hardhat-waffle": "^2.0.1",
+    "@openzeppelin/contracts": "^4.2.0",
+    "@typechain/ethers-v5": "^7.0.1",
+    "@typechain/hardhat": "^2.3.0",
+    "@types/chai": "^4.2.21",
+    "@types/mocha": "^9.0.0",
+    "@types/node": "^16.6.1",
+    "chai": "^4.3.4",
+    "ethereum-waffle": "^3.4.0",
+    "ethers": "^5.4.4",
+    "hardhat": "^2.6.0",
+    "hardhat-gas-reporter": "^1.0.4",
+    "ts-node": "^10.2.0",
+    "typechain": "^5.1.2",
+    "typescript": "^4.3.5"
+  }
+}

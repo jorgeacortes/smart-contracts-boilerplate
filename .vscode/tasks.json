@@ -1,0 +1,48 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "npm",
+			"script": "compile",
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"problemMatcher": [],
+			"label": "npm: compile",
+			"detail": "npx hardhat compile"
+		},
+		{
+			"type": "npm",
+			"script": "test",
+			"group": {
+				"kind": "test",
+				"isDefault": true
+			},
+			"problemMatcher": [],
+			"label": "npm: test",
+			"detail": "npx hardhat test"
+		},
+		{
+			"type": "npm",
+			"script": "deploy:local",
+			"problemMatcher": [],
+			"label": "npm: deploy:local",
+			"detail": "npx hardhat run scripts/deploy.js"
+		},
+		{
+			"type": "npm",
+			"script": "deploy:ropsten",
+			"problemMatcher": [],
+			"label": "npm: deploy:ropsten",
+			"detail": "npx hardhat run scripts/deploy.js --network ropsten"
+		},
+		{
+			"type": "npm",
+			"script": "node",
+			"problemMatcher": [],
+			"label": "npm: node",
+			"detail": "npx hardhat node"
+		}
+	]
+}
