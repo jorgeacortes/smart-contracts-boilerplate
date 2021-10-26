@@ -7,3 +7,8 @@ env.json
 # artifacts
 artifacts
 cache
+ts-types
+
+# solidity-coverage
+coverage.json
+coverage
